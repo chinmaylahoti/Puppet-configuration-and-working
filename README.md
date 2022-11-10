@@ -87,7 +87,6 @@ sudo puppet cert list
 If there is any certificate then sign them
 sudo puppet cert sign --all
 
-
 ***********Create manifest********
 sudo mkdir -p /etc/puppet/code/environments/production/manifests/
 sudo nano /etc/puppet/code/environments/production/manifests/site.pp
@@ -131,7 +130,6 @@ cd environments/production/manifests/
 Create a file new_site1.pp
 sudo nano new_site.pp
 
-
 node default{			#any of the agent wanna update master can do
 # 1 resource
 package {'nginx':			#resource type{ 'resource name
@@ -149,7 +147,6 @@ Save the file
 ctrl+x
 y
 Enter
-
 The file is saved
 ----------------------------------------------------------------------
 Slave
